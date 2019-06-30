@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.com/cytopia/docker-golint.svg?branch=master)](https://travis-ci.com/cytopia/docker-golint)
 [![Tag](https://img.shields.io/github/tag/cytopia/docker-golint.svg)](https://github.com/cytopia/docker-golint/releases)
-[![](https://images.microbadger.com/badges/version/cytopia/golint:latest.svg?kill_cache=1)](https://microbadger.com/images/cytopia/golint:latest "golint")
-[![](https://images.microbadger.com/badges/image/cytopia/golint:latest.svg?kill_cache=1)](https://microbadger.com/images/cytopia/golint:latest "golint")
+[![](https://images.microbadger.com/badges/version/cytopia/golint:latest.svg?&kill_cache=1)](https://microbadger.com/images/cytopia/golint:latest "golint")
+[![](https://images.microbadger.com/badges/image/cytopia/golint:latest.svg?&kill_cache=1)](https://microbadger.com/images/cytopia/golint:latest "golint")
 [![](https://img.shields.io/badge/github-cytopia%2Fdocker--golint-red.svg)](https://github.com/cytopia/docker-golint "github.com/cytopia/docker-golint")
 [![License](https://img.shields.io/badge/license-MIT-%233DA639.svg)](https://opensource.org/licenses/MIT)
 
@@ -33,7 +33,7 @@
 
 View **[Dockerfile](https://github.com/cytopia/docker-golint/blob/master/Dockerfile)** on GitHub.
 
-[![Docker hub](http://dockeri.co/image/cytopia/golint?kill_cache=1)](https://hub.docker.com/r/cytopia/golint)
+[![Docker hub](http://dockeri.co/image/cytopia/golint?&kill_cache=1)](https://hub.docker.com/r/cytopia/golint)
 
 Tiny Alpine-based multistage-build dockerized version of [golint](https://github.com/golang/lint)<sup>[1]</sup>.
 The image is built nightly against multiple stable versions and pushed to Dockerhub.
