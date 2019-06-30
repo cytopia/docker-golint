@@ -21,7 +21,7 @@
 > [jsonlint](https://github.com/cytopia/docker-jsonlint) **•**
 > [phpcs](https://github.com/cytopia/docker-phpcs) **•**
 > [pycodestyle](https://github.com/cytopia/docker-pycodestyle) **•**
-> [golint](https://github.com/cytopia/docker-golint) **•**
+> [pylint](https://github.com/cytopia/docker-pylint) **•**
 > [terraform-docs](https://github.com/cytopia/docker-terraform-docs) **•**
 > [terragrunt](https://github.com/cytopia/docker-terragrunt) **•**
 > [yamllint](https://github.com/cytopia/docker-yamllint)
