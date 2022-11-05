@@ -42,7 +42,7 @@
 View **[Dockerfiles](https://github.com/cytopia/docker-golint/blob/master/Dockerfiles/)** on GitHub.
 
 
-**Available Architectures:**  `amd64`, `i386`, `arm64`, `arm/v7`, `arm/v6`
+**Available Architectures:**  `amd64`, `i386`, `arm64`, `arm/v7`
 
 Tiny Alpine-based multistage-build dockerized version of [golint](https://github.com/golang/lint)<sup>[1]</sup>.
 The image is built nightly against multiple stable versions and pushed to Dockerhub.
@@ -63,7 +63,7 @@ The following Docker image tags are rolling releases and are built and updated e
 
 | Docker Tag           | Git Ref   | golint       | Available Architectures                      |
 |----------------------|-----------|--------------|----------------------------------------------|
-| `latest`             | master    | latest       | `amd64`, `i386`, `arm64`, `arm/v7`, `arm/v6` |
+| `latest`             | master    | latest       | `amd64`, `i386`, `arm64`, `arm/v7`           |
 
 #### Point in time releases
 
@@ -73,7 +73,7 @@ The following Docker image tags are built once and can be used for reproducible 
 
 | Docker Tag           | Git Ref      | golint       | Available Architectures                      |
 |----------------------|--------------|--------------|----------------------------------------------|
-| `latest-<tag>`       | tag: `<tag>` | latest       | `amd64`, `i386`, `arm64`, `arm/v7`, `arm/v6` |
+| `latest-<tag>`       | tag: `<tag>` | latest       | `amd64`, `i386`, `arm64`, `arm/v7`           |
 
 > Where `<tag>` refers to the chosen git tag from this repository.
 
