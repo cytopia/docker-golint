@@ -15,10 +15,11 @@ RUN set -x \
 	&& go get -u golang.org/x/lint/golint
 
 # Use a clean tiny image to store artifacts in
-FROM alpine:3.9
+FROM alpine:3.16
 LABEL \
 	maintainer="cytopia <cytopia@everythingcli.org>" \
 	repo="https://github.com/cytopia/docker-golint"
+
 COPY --from=builder /go/bin/golint /usr/local/bin/golint
 
 ENV WORKDIR /data
