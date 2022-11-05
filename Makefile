@@ -101,14 +101,26 @@ manifest-push: docker-manifest-push
 # Test Targets
 # -------------------------------------------------------------------------------------------------
 .PHONY: test
-test: _test-run
+test: _test-run-succ
+test: _test-run-fail
 
 .PHONY: _test-run
-_test-run:
+_test-run-succ:
 	@echo "------------------------------------------------------------"
-	@echo "- Testing golint"
+	@echo "- Testing golint (success)"
 	@echo "------------------------------------------------------------"
-	@if ! docker run --rm --platform $(ARCH) -v $(CURRENT_DIR)/tests:/data $(IMAGE):$(DOCKER_TAG) test.go ; then \
+	@if ! docker run --rm --platform $(ARCH) -v $(CURRENT_DIR)/tests:/data $(IMAGE):$(DOCKER_TAG) -set_exit_status success.go ; then \
+		echo "Failed"; \
+		exit 1; \
+	fi; \
+	echo "Success";
+
+.PHONY: _test-run-fail
+_test-run-fail:
+	@echo "------------------------------------------------------------"
+	@echo "- Testing golint (failure)"
+	@echo "------------------------------------------------------------"
+	@if docker run --rm --platform $(ARCH) -v $(CURRENT_DIR)/tests:/data $(IMAGE):$(DOCKER_TAG) -set_exit_status failure.go ; then \
 		echo "Failed"; \
 		exit 1; \
 	fi; \
